@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6fb;
+    color: #1f2937;
+}
+
+
+   /* NAVBAR */
+
+nav {
+    height: 75px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 0 30px;
+}
+
+.nav-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Logo */
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-area img {
+    width: 42px;
+    height: 42px;
+    object-fit: contain;
+}
+
+#template-select {
+    padding: 9px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#template-select:focus {
+    outline: none;
+    border-color: #6366f1;
+}
+
+
+/* Title */
+
+.title {
+    text-align: center;
+}
+
+.title h3 {
+    font-size: 19px;
+    color: #111827;
+    margin-bottom: 3px;
+}
+
+.title p {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+
+/* View Buttons */
+
+.view-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.view-buttons button {
+    border: none;
+    background-color: #eef2ff;
+    color: #4f46e5;
+    padding: 9px 15px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.view-buttons button:hover {
+    background-color: #4f46e5;
+    color: white;
+}
+
+
+   /* MAIN */
+
+#main {
+    min-height: calc(100vh - 75px);
+    display: flex;
+    gap: 25px;
+    padding: 25px;
+}
+
+
+   /* PREVIEW */
+
+#preview-section {
+    width: 68%;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 25px;
+}
+
+.section-title {
+    margin-bottom: 20px;
+}
+
+.section-title h3 {
+    font-size: 20px;
+    color: #111827;
+    margin-bottom: 5px;
+}
+
+.section-title p {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+
+#preview-wrapper {
+    min-height: 600px;
+    background-color: #eef1f7;
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: auto;
+}
+
+
+#template-preview {
+    width: 600px;
+    max-width: 100%;
+    background-color: white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+   /* EDITOR */
+
+#edit-section {
+    width: 32%;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 25px;
+    overflow-y: auto;
+}
+
+
+#editor-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+#editor-controls label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #374151;
+    margin-top: 8px;
+}
+
+
+#editor-controls input[type="text"],
+#editor-controls textarea,
+#editor-controls input[type="file"] {
+    width: 100%;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    background-color: #ffffff;
+}
+
+
+#editor-controls textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+
+#editor-controls input[type="color"] {
+    width: 100%;
+    height: 40px;
+    padding: 3px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+
+#editor-controls input[type="range"] {
+    width: 100%;
+    cursor: pointer;
+}
+
+
+#editor-controls input:focus,
+#editor-controls textarea:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+
+   /* EMAIL BUTTONS */
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+   /* RESPONSIVE */
+
+@media (max-width: 1000px) {
+
+    #main {
+        flex-direction: column;
+    }
+
+    #preview-section,
+    #edit-section {
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    nav {
+        height: auto;
+        padding: 15px;
+    }
+
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .title {
+        order: -1;
+    }
+
+    #main {
+        padding: 15px;
+    }
+
+    #preview-wrapper {
+        padding: 10px;
+    }
+
+}
