@@ -98,3 +98,13 @@ Nimish
 Web Developer | HTML | CSS | JavaScript | DOM | APIs | CMS
 
 GitHub: https://github.com/0Nimish0
+
+Screenshots
+ Email Template Builder
+![Email Template Builder](./screenshots/builder.png)
+
+Sale Template
+![Sale Template](./screenshots/sale.png)
+
+Newsletter Template
+![Newsletter Template](./screenshots/newsletter.png)
